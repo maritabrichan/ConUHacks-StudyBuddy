@@ -11,7 +11,7 @@ struct TimerView: View {
     //MARK: - PROPERTIES
     @State var timeRemaining = 2//1*25*60 // 25 second counter
     @State var isBreakViewActive = false
-    @State var count :Int
+    @State var count :Int = 1
     
     let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
 
