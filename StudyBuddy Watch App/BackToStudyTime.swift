@@ -13,7 +13,7 @@ struct BackToStudyTime: View {
       
             VStack {
                 Text("Break is Over! 🏃‍♀️").font(.system(size: 25.0))
-                Text("\nIt's time to go back to your studies. You can do this! 💪\n").font(.system(size: 15.0))
+                Text("\nIt's time to go back to your studies and start a new pomo. You can do this! 💪\n").font(.system(size: 14.0))
                 
                 // Adding the button
                 Button (action: {
