@@ -9,8 +9,8 @@ import SwiftUI
 
 struct TimerView: View {
     //MARK: - PROPERTIES
-    @State var timeRemaining = 25//1*25*60 // 25 minute counter
-    @State var isTimerViewActive = false
+    @State var timeRemaining = 25//1*25*60 // 25 second counter
+    @State var isBreakViewActive = false
     
     let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
 
@@ -28,12 +28,11 @@ struct TimerView: View {
                     self.timeRemaining -= 1
                 }else{
                     print("Timer is finished")
-                    self.isTimerViewActive = true
-                    
+                    self.isBreakViewActive = true
                     self.timer.upstream.connect().cancel()
                 }
-            }.sheet(isPresented: $isTimerViewActive) {
-                BreakTime()
+            }.sheet(isPresented: $isBreakViewActive) {
+                BreakTime() // Run the breakview
             }
     }
     
