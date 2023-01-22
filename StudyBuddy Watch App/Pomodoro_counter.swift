@@ -12,10 +12,20 @@ struct Pomodoro_counter: View {
     @State var  remove: String = "Remove Pomo"
     var body: some View {
         ScrollView{
-      
-            VStack {
-                Text("Pomo Goal:").font(.headline).bold().italic()
-                Text(String(count)).font(.largeTitle)
+            HStack{
+                VStack{
+                    Text("Pomo Goal:").font(.headline).bold().italic()
+                    Text(String(count)).font(.largeTitle)
+            
+                }.padding()
+                Button(action: {
+                    //go to timer
+                    print("Button tapped!")
+                }) {
+                    Text("Start")
+                }
+            }
+            HStack {
                 
                 // Adding the button
                 Button(action: {
@@ -28,8 +38,6 @@ struct Pomodoro_counter: View {
                 }) {
                     Text("Add Pomo")
                 }
-            }
-
                 // Adding the button
               
                     
@@ -42,6 +50,8 @@ struct Pomodoro_counter: View {
                             Text(remove)
                         }
                     }
+            }
+
                 
             
         }
