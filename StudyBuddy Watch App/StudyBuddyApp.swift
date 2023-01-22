@@ -9,11 +9,11 @@ import SwiftUI
 
 @main
 struct Test_Project_Watch_AppApp: App {
-    @State var count = 1
+    @State var count = 10
     var body: some Scene {
         WindowGroup {
             ScrollView{
-                Pomodoro_counter()
+                Pomodoro_counter(count: count)
                 TimerView()
             }
         }
