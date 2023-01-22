@@ -13,6 +13,12 @@
 		316C2D75297CD3E100462B84 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 316C2D74297CD3E100462B84 /* Assets.xcassets */; };
 		316C2D78297CD3E100462B84 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 316C2D77297CD3E100462B84 /* Preview Assets.xcassets */; };
 		316C2D83297CD44900462B84 /* Pomodoro_counter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 316C2D82297CD44900462B84 /* Pomodoro_counter.swift */; };
+		316C2D85297CDFFE00462B84 /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 316C2D84297CDFFE00462B84 /* TimerView.swift */; };
+		316C2D87297CE10C00462B84 /* BreakTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 316C2D86297CE10C00462B84 /* BreakTime.swift */; };
+		316C2D89297CE11D00462B84 /* PauseTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 316C2D88297CE11D00462B84 /* PauseTime.swift */; };
+		316C2D8B297CE13F00462B84 /* BackToStudyTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 316C2D8A297CE13F00462B84 /* BackToStudyTime.swift */; };
+		316C2D8D297CE14C00462B84 /* MealTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 316C2D8C297CE14C00462B84 /* MealTime.swift */; };
+		316C2D8F297CE15900462B84 /* SleepTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 316C2D8E297CE15900462B84 /* SleepTime.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +53,12 @@
 		316C2D74297CD3E100462B84 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		316C2D77297CD3E100462B84 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		316C2D82297CD44900462B84 /* Pomodoro_counter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pomodoro_counter.swift; sourceTree = "<group>"; };
+		316C2D84297CDFFE00462B84 /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
+		316C2D86297CE10C00462B84 /* BreakTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreakTime.swift; sourceTree = "<group>"; };
+		316C2D88297CE11D00462B84 /* PauseTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PauseTime.swift; sourceTree = "<group>"; };
+		316C2D8A297CE13F00462B84 /* BackToStudyTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackToStudyTime.swift; sourceTree = "<group>"; };
+		316C2D8C297CE14C00462B84 /* MealTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealTime.swift; sourceTree = "<group>"; };
+		316C2D8E297CE15900462B84 /* SleepTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepTime.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,7 +92,13 @@
 		316C2D6F297CD3E100462B84 /* StudyBuddy Watch App */ = {
 			isa = PBXGroup;
 			children = (
+				316C2D86297CE10C00462B84 /* BreakTime.swift */,
+				316C2D84297CDFFE00462B84 /* TimerView.swift */,
+				316C2D8E297CE15900462B84 /* SleepTime.swift */,
 				316C2D82297CD44900462B84 /* Pomodoro_counter.swift */,
+				316C2D88297CE11D00462B84 /* PauseTime.swift */,
+				316C2D8C297CE14C00462B84 /* MealTime.swift */,
+				316C2D8A297CE13F00462B84 /* BackToStudyTime.swift */,
 				316C2D70297CD3E100462B84 /* StudyBuddyApp.swift */,
 				316C2D72297CD3E100462B84 /* ContentView.swift */,
 				316C2D74297CD3E100462B84 /* Assets.xcassets */,
@@ -196,8 +214,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				316C2D73297CD3E100462B84 /* ContentView.swift in Sources */,
+				316C2D8B297CE13F00462B84 /* BackToStudyTime.swift in Sources */,
+				316C2D8F297CE15900462B84 /* SleepTime.swift in Sources */,
+				316C2D89297CE11D00462B84 /* PauseTime.swift in Sources */,
+				316C2D87297CE10C00462B84 /* BreakTime.swift in Sources */,
 				316C2D71297CD3E100462B84 /* StudyBuddyApp.swift in Sources */,
+				316C2D85297CDFFE00462B84 /* TimerView.swift in Sources */,
 				316C2D83297CD44900462B84 /* Pomodoro_counter.swift in Sources */,
+				316C2D8D297CE14C00462B84 /* MealTime.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

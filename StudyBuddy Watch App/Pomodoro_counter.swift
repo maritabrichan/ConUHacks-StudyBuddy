@@ -14,10 +14,8 @@ struct Pomodoro_counter: View {
         ScrollView{
       
             VStack {
-                Image(systemName: "globe")
-                    .imageScale(.large)
-                    .foregroundColor(.accentColor)
-                Text(String(count))
+                Text("Pomo Goal:").font(.headline).bold().italic()
+                Text(String(count)).font(.largeTitle)
                 
                 // Adding the button
                 Button(action: {
@@ -33,18 +31,18 @@ struct Pomodoro_counter: View {
             }
 
                 // Adding the button
-                Button(action: {
+              
                     
                     // Code to execute when button is tapped goes here
                     if count > 0 {
+                        Button(action: {
                       count = count-1
-                    }else{
-                        remove = "No more Pomos!"
+                            print("Button tapped!")
+                        }) {
+                            Text(remove)
+                        }
                     }
-                    print("Button tapped!")
-                }) {
-                    Text(remove)
-                }
+                
             
         }
 
