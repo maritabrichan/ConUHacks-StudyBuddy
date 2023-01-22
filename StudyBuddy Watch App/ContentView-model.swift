@@ -12,8 +12,9 @@ extension ContentView {
     final class ViewModel: ObservableObject {
         @Published var isActive = false
         @Published var showingAlert = false
-        @Published var time: String = "25:00"
-        @Published var minutes: Float = 25.0 {
+        @Published var time: String = "1:00"
+        @Published var pomodoros: Int = 1
+        @Published var minutes: Float = 1.0 {
             didSet {
                 self.time = "\(Int(minutes)):00"
             }
@@ -24,13 +25,24 @@ extension ContentView {
         // Start the timer with the given amount of minutes
         func start(minutes: Float) {
             self.initialTime = Int(minutes)
+            //self.pomodoros -= 1
             self.endDate = Date()
             self.isActive = true
             self.endDate = Calendar.current.date(byAdding: .minute, value: Int(minutes), to: endDate)!
         }
         
         // Reset the timer
+        func addPomodoros() {
+            self.pomodoros += 1
+        }
+        
+        func removePomodoros() {
+            self.pomodoros -= 1
+        }
+        
+        
         func reset() {
+            self.pomodoros+=1
             self.minutes = Float(initialTime)
             self.isActive = false
             self.time = "\(Int(minutes)):00"
