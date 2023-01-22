@@ -19,7 +19,7 @@ extension ContentView {
                 self.time = "\(Int(minutes)):00"
             }
         }
-        private var initialTime = 0
+        private var initialTime = 1
         private var endDate = Date()
         
         // Start the timer with the given amount of minutes

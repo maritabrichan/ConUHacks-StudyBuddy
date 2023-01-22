@@ -62,7 +62,7 @@ struct ContentView: View {
                         Text("\(timerObject.time)")
                             .font(.system(size: 50, weight: .medium, design: .rounded))
                             .alert("It's Break Time! 😉", isPresented: $timerObject.showingAlert, actions: {
-                                  Button("Nevermind !") {}
+                                  Button("✨OK✨") {}
                                 }, message: {
                                   Text("You have worked very hard in the past 25 minutes and deserve some rest. 🍻")
                                 })
