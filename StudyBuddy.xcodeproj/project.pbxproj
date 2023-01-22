@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		315B7925297D440800D538EF /* PomosDone.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315B7924297D440800D538EF /* PomosDone.swift */; };
 		316C2D6C297CD3E100462B84 /* StudyBuddy Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 316C2D6B297CD3E100462B84 /* StudyBuddy Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		316C2D71297CD3E100462B84 /* StudyBuddyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 316C2D70297CD3E100462B84 /* StudyBuddyApp.swift */; };
 		316C2D73297CD3E100462B84 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 316C2D72297CD3E100462B84 /* ContentView.swift */; };
@@ -48,6 +49,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		315B7924297D440800D538EF /* PomosDone.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PomosDone.swift; sourceTree = "<group>"; };
 		316C2D65297CD3E100462B84 /* StudyBuddy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StudyBuddy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		316C2D6B297CD3E100462B84 /* StudyBuddy Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "StudyBuddy Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		316C2D70297CD3E100462B84 /* StudyBuddyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyBuddyApp.swift; sourceTree = "<group>"; };
@@ -104,6 +106,7 @@
 				316C2D8C297CE14C00462B84 /* MealTime.swift */,
 				316C2D8A297CE13F00462B84 /* BackToStudyTime.swift */,
 				316C2D70297CD3E100462B84 /* StudyBuddyApp.swift */,
+				315B7924297D440800D538EF /* PomosDone.swift */,
 				316C2D72297CD3E100462B84 /* ContentView.swift */,
 				B67E52C1297D1FAE0063FA84 /* TasksView.swift */,
 				B67E52BF297D1A690063FA84 /* ContentView-model.swift */,
@@ -221,6 +224,7 @@
 			files = (
 				316C2D73297CD3E100462B84 /* ContentView.swift in Sources */,
 				316C2D8B297CE13F00462B84 /* BackToStudyTime.swift in Sources */,
+				315B7925297D440800D538EF /* PomosDone.swift in Sources */,
 				B67E52C0297D1A690063FA84 /* ContentView-model.swift in Sources */,
 				316C2D8F297CE15900462B84 /* SleepTime.swift in Sources */,
 				316C2D89297CE11D00462B84 /* PauseTime.swift in Sources */,
