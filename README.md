@@ -2,8 +2,8 @@
 
 ## Team Members
 - Marita Brichan
-- Fatima 
-- Jaden
+- Fatima El Fouladi
+- Jaeden Rotondo
 - Luke 
 
 ## Project Description
