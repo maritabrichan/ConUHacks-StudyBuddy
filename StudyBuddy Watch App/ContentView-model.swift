@@ -59,7 +59,7 @@ extension ContentView {
             // Checks that the countdown is not <= 0
             if diff <= 0 {
                 self.isActive = false
-                self.time = "0:00"
+                self.time = "1:00"
                 self.showingAlert = true
                 return
             }
