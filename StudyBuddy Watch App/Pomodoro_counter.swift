@@ -14,7 +14,7 @@ struct Pomodoro_counter: View {
         ScrollView{
             HStack{
                 VStack{
-                    Text("Pomo Goal:").font(.headline).bold().italic()
+                    Text("Pomo Goal :").font(.headline).bold().italic()
                     Text(String(count)).font(.largeTitle)
             
                 }.padding()
@@ -55,8 +55,6 @@ struct Pomodoro_counter: View {
                 
             
         }
-
-        .padding()
     }
 }
 
