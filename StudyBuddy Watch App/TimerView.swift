@@ -9,7 +9,8 @@ import SwiftUI
 
 struct TimerView: View {
     //MARK: - PROPERTIES
-    @State var timeRemaining = 24*60*60
+    @State var timeRemaining = 25//1*25*60 // 25 minute counter
+    @State var isTimerViewActive = false
     
     let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
 
@@ -26,16 +27,20 @@ struct TimerView: View {
                 if self.timeRemaining > 0 {
                     self.timeRemaining -= 1
                 }else{
+                    print("Timer is finished")
+                    self.isTimerViewActive = true
+                    
                     self.timer.upstream.connect().cancel()
                 }
+            }.sheet(isPresented: $isTimerViewActive) {
+                BreakTime()
             }
     }
     
     //Convert the time into 24hr (24:00:00) format
     func timeString(time: Int) -> String {
-        let hours   = Int(time) / 3600
         let minutes = Int(time) / 60 % 60
         let seconds = Int(time) % 60
-        return String(format:"%02i:%02i:%02i", hours, minutes, seconds)
+        return String(format:"%02i:%02i", minutes, seconds)
     }
 }
