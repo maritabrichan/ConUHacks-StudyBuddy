@@ -7,9 +7,11 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct Pomodoro_counter: View {
     @State var count: Int = 1
     var body: some View {
+        ScrollView{
+      
             VStack {
                 Image(systemName: "globe")
                     .imageScale(.large)
@@ -27,14 +29,26 @@ struct ContentView: View {
                     Text("Add Pomodoro")
                 }
             }
-        
+
+                // Adding the button
+                Button(action: {
+                    
+                    
+                    // Code to execute when button is tapped goes here
+                    count = count-1
+                    print("Button tapped!")
+                }) {
+                    Text("Remove Pomodoro")
+                }
+            
+        }
 
         .padding()
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct PomodoroCounter_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        Pomodoro_counter()
     }
 }

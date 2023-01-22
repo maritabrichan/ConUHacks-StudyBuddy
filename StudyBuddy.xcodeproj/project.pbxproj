@@ -12,6 +12,7 @@
 		316C2D73297CD3E100462B84 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 316C2D72297CD3E100462B84 /* ContentView.swift */; };
 		316C2D75297CD3E100462B84 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 316C2D74297CD3E100462B84 /* Assets.xcassets */; };
 		316C2D78297CD3E100462B84 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 316C2D77297CD3E100462B84 /* Preview Assets.xcassets */; };
+		316C2D83297CD44900462B84 /* Pomodoro_counter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 316C2D82297CD44900462B84 /* Pomodoro_counter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,7 @@
 		316C2D72297CD3E100462B84 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		316C2D74297CD3E100462B84 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		316C2D77297CD3E100462B84 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		316C2D82297CD44900462B84 /* Pomodoro_counter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pomodoro_counter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +80,7 @@
 		316C2D6F297CD3E100462B84 /* StudyBuddy Watch App */ = {
 			isa = PBXGroup;
 			children = (
+				316C2D82297CD44900462B84 /* Pomodoro_counter.swift */,
 				316C2D70297CD3E100462B84 /* StudyBuddyApp.swift */,
 				316C2D72297CD3E100462B84 /* ContentView.swift */,
 				316C2D74297CD3E100462B84 /* Assets.xcassets */,
@@ -194,6 +197,7 @@
 			files = (
 				316C2D73297CD3E100462B84 /* ContentView.swift in Sources */,
 				316C2D71297CD3E100462B84 /* StudyBuddyApp.swift in Sources */,
+				316C2D83297CD44900462B84 /* Pomodoro_counter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
