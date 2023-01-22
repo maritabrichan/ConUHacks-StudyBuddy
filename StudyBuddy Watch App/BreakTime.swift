@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct BreakTime: View {
-    
     var body: some View {
             VStack {
                 Text("It's Break Time! 😉").font(.system(size: 23.0))
