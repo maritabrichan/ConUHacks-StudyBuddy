@@ -13,9 +13,12 @@ struct Test_Project_Watch_AppApp: App {
     var body: some Scene {
         WindowGroup {
             ScrollView{
+                QuoteView()
                 Pomodoro_counter(count: count)
-                TimerView()
+                TimerView(count: count)
             }
         }
     }
 }
+
+

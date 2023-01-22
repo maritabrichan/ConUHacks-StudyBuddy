@@ -19,6 +19,8 @@
 		316C2D8B297CE13F00462B84 /* BackToStudyTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 316C2D8A297CE13F00462B84 /* BackToStudyTime.swift */; };
 		316C2D8D297CE14C00462B84 /* MealTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 316C2D8C297CE14C00462B84 /* MealTime.swift */; };
 		316C2D8F297CE15900462B84 /* SleepTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 316C2D8E297CE15900462B84 /* SleepTime.swift */; };
+		B67E52C0297D1A690063FA84 /* ContentView-model.swift in Sources */ = {isa = PBXBuildFile; fileRef = B67E52BF297D1A690063FA84 /* ContentView-model.swift */; };
+		B67E52C2297D1FAE0063FA84 /* TasksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B67E52C1297D1FAE0063FA84 /* TasksView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +61,8 @@
 		316C2D8A297CE13F00462B84 /* BackToStudyTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackToStudyTime.swift; sourceTree = "<group>"; };
 		316C2D8C297CE14C00462B84 /* MealTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealTime.swift; sourceTree = "<group>"; };
 		316C2D8E297CE15900462B84 /* SleepTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepTime.swift; sourceTree = "<group>"; };
+		B67E52BF297D1A690063FA84 /* ContentView-model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ContentView-model.swift"; sourceTree = "<group>"; };
+		B67E52C1297D1FAE0063FA84 /* TasksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +105,8 @@
 				316C2D8A297CE13F00462B84 /* BackToStudyTime.swift */,
 				316C2D70297CD3E100462B84 /* StudyBuddyApp.swift */,
 				316C2D72297CD3E100462B84 /* ContentView.swift */,
+				B67E52C1297D1FAE0063FA84 /* TasksView.swift */,
+				B67E52BF297D1A690063FA84 /* ContentView-model.swift */,
 				316C2D74297CD3E100462B84 /* Assets.xcassets */,
 				316C2D76297CD3E100462B84 /* Preview Content */,
 			);
@@ -215,9 +221,11 @@
 			files = (
 				316C2D73297CD3E100462B84 /* ContentView.swift in Sources */,
 				316C2D8B297CE13F00462B84 /* BackToStudyTime.swift in Sources */,
+				B67E52C0297D1A690063FA84 /* ContentView-model.swift in Sources */,
 				316C2D8F297CE15900462B84 /* SleepTime.swift in Sources */,
 				316C2D89297CE11D00462B84 /* PauseTime.swift in Sources */,
 				316C2D87297CE10C00462B84 /* BreakTime.swift in Sources */,
+				B67E52C2297D1FAE0063FA84 /* TasksView.swift in Sources */,
 				316C2D71297CD3E100462B84 /* StudyBuddyApp.swift in Sources */,
 				316C2D85297CDFFE00462B84 /* TimerView.swift in Sources */,
 				316C2D83297CD44900462B84 /* Pomodoro_counter.swift in Sources */,

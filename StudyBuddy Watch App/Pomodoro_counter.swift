@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct Pomodoro_counter: View {
-    @State var count: Int = 1
+    @State var count: Int
     @State var  remove: String = "Remove Pomo"
     var body: some View {
         ScrollView{
@@ -60,6 +60,6 @@ struct Pomodoro_counter: View {
 
 struct PomodoroCounter_Previews: PreviewProvider {
     static var previews: some View {
-        Pomodoro_counter()
+        Pomodoro_counter(count:1)
     }
 }
