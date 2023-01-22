@@ -9,8 +9,6 @@ import SwiftUI
 
 struct BreakTime: View {
     var body: some View {
-        ScrollView{
-      
             VStack {
                 Text("It's Break Time! 😉").font(.system(size: 23.0))
                 Text("\nYou have worked very hard in the past 25 minutes and deserve some rest. 🍻\n").font(.system(size: 14.0))
@@ -27,10 +25,6 @@ struct BreakTime: View {
                     .tint(.green)
 
             }
-
-                
-            
-        }
 
         .padding()
     }

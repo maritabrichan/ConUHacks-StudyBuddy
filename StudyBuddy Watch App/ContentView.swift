@@ -8,42 +8,46 @@
 import SwiftUI
 
 struct ContentView: View {
-    @StateObject private var vm = ViewModel()
-    private let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
-    private let width: Double = 150
-    
+    @State var count: Int = 1
+    @State var  remove: String = "Remove Pomo"
     var body: some View {
-        VStack {
-            Text("\(vm.time)")
-                .font(.system(size: 50, weight: .medium, design: .rounded))
-                .alert("Timer done!", isPresented: $vm.showingAlert) {
-                    Button("Continue", role: .cancel) {
-                        // Code
-                    }
-                }
-                .padding()
-                .frame(width: width)
+        ScrollView{
+            HStack{
+                VStack{
+                    Text("Pomo Goal :").font(.headline).bold().italic()
+                    Text(String(count)).font(.largeTitle)
             
-            Slider(value: $vm.minutes, in: 5...50, step: 5)
-                .padding()
-                .disabled(vm.isActive)
-                .animation(.easeInOut, value: vm.minutes)
-
-            HStack(spacing:4) {
-                Button("Start") {
-                    vm.start(minutes: vm.minutes)
                 }
-                .disabled(vm.isActive)
-                
-                Button("Reset", action: vm.reset)
-                    .tint(.red)
+                .padding()
+                NavigationView{
+                    NavigationLink(destination:TimerView()){
+                    Text("Start")
+                }
             }
-            .frame(width: width)
+            }
+            HStack {
+                // Adding the button
+                Button(action: {
+
+                    // Code to execute when button is tapped goes here
+                    count = count+1
+                    remove = "Remove Pomo"
+                }) {
+                    Text("Add Pomo")
+                }
+                // Adding the button
+                    // Code to execute when button is tapped goes here
+                    if count > 0 {
+                        Button(action: {
+                      count = count-1
+                            print("Button tapped!")
+                        }) {
+                            Text(remove)
+                        }
+                    }
+            }
+
         }
-        .onReceive(timer) { _ in
-            vm.updateCountdown()
-        }
-        
     }
 }
 
