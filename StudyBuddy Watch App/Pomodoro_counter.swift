@@ -9,6 +9,7 @@ import SwiftUI
 
 struct Pomodoro_counter: View {
     @State var count: Int = 1
+    @State var  remove: String = "Remove Pomo"
     var body: some View {
         ScrollView{
       
@@ -24,21 +25,25 @@ struct Pomodoro_counter: View {
                     
                     // Code to execute when button is tapped goes here
                     count = count+1
+                    remove = "Remove Pomo"
                     print("Button tapped!")
                 }) {
-                    Text("Add Pomodoro")
+                    Text("Add Pomo")
                 }
             }
 
                 // Adding the button
                 Button(action: {
                     
-                    
                     // Code to execute when button is tapped goes here
-                    count = count-1
+                    if count > 0 {
+                      count = count-1
+                    }else{
+                        remove = "No more Pomos!"
+                    }
                     print("Button tapped!")
                 }) {
-                    Text("Remove Pomodoro")
+                    Text(remove)
                 }
             
         }
