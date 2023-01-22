@@ -17,7 +17,7 @@ struct QuoteView: View {
   
     var body: some View {
         List(results, id: \.id) { item in
-            VStack(alignment: .leading) {
+            HStack() {
                 Text(item.title);Image(systemName: item.completed ? "checkmark.square.fill" : "square")
                     .foregroundColor(item.completed ? Color.blue : Color.secondary)
                     .onTapGesture {
